@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- liuchao -->
+<mapper namespace="com.liuchao.springboot.mapper.AdsMapper">
+    <select id="findById" parameterType="Long" resultType="AdsEntity">
+        SELECT id, name, seq_no AS seqNo, img_url AS imgUrl, ref_url AS refUrl, created, updated, enabled FROM TB_ADS WHERE id = #{id}
+    </select>
+</mapper>

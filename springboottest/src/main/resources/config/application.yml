@@ -1,0 +1,19 @@
+liuchao:
+    name: liuliuchaochao
+    testarray:
+        - liuchao1
+        - liuchao2
+server:
+    port: 9090
+    address: 127.0.0.1
+
+spring:
+    datasource:
+        name: jdbctest
+        url: jdbc:oracle:thin:@127.0.0.1:1521:testfeeker
+        username: liuchao
+        password: liuchao
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+mybatis:
+    mapperLocations: classpath:mapper/*.xml
+    typeAliasesPackage: com.liuchao.springboot.mapper.model

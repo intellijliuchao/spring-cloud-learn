@@ -1,0 +1,2 @@
+pojo: !!com.liuchao.springboot.yamltest.Pojo {name: liuchao}
+pojo-other: !!com.liuchao.springboot.yamltest.Pojo [hello]
